@@ -1,41 +1,6 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
-      "author": "Ann Richards"
-    },
-    {
-      "id": 2,
-      "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
-      "author": "Collin Powell"
-    },
-    {
-      "id": 3,
-      "quote": "Don't count the days, make the days count.",
-      "author": "Mike Tyson"
-    },
-    {
-      "id": 4,
-      "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I have lived through this horror. I can take the next thing that comes along.' You must do the thing you think you cannot do.",
-      "author": "Eleanor Roosevelt"
-    },
-    {
-      "id": 5,
-      "quote": "The cure for boredom is curiosity. There is no cure for curiosity.",
-      "author": "Dorothy Parker"
-    },
-    {
-      "id": 6,
-      "quote": "Do the best you can in every task, no matter how unimportant it may seem at the time. No one learns more about a problem than the person at the bottom.",
-      "author": "Sandra Day O'Connor"
-    },
-    {
-      "id": 7,
-      "quote": "Tell me and I forget, teach me and I remember, involve me and I learn.",
-      "author": "Benjamin Franklin"
-    },
-    {
       "id": 8,
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "author": "Winston Churchhill"
@@ -128,117 +93,7 @@
   ],
   "likes": [
     {
-      "id": 1,
-      "quoteId": 1,
-      "createdAt": 1558524356
-    },
-    {
       "id": 2
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563824301050,
-      "id": 3
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563824574345,
-      "id": 4
-    },
-    {
-      "quoteId": 2,
-      "createdAt": 1563824607292,
-      "id": 5
-    },
-    {
-      "quoteId": 2,
-      "createdAt": 1563824650775,
-      "id": 6
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563824684542,
-      "id": 7
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825062571,
-      "id": 8
-    },
-    {
-      "quoteId": 2,
-      "createdAt": 1563825064085,
-      "id": 9
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825064870,
-      "id": 10
-    },
-    {
-      "quoteId": 2,
-      "createdAt": 1563825065816,
-      "id": 11
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825066520,
-      "id": 12
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825071509,
-      "id": 13
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825071691,
-      "id": 14
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825071876,
-      "id": 15
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825072068,
-      "id": 16
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825198816,
-      "id": 17
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825199017,
-      "id": 18
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825200913,
-      "id": 19
-    },
-    {
-      "quoteId": 2,
-      "createdAt": 1563825250679,
-      "id": 20
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825308729,
-      "id": 21
-    },
-    {
-      "quoteId": 1,
-      "createdAt": 1563825309481,
-      "id": 22
-    },
-    {
-      "quoteId": 2,
-      "createdAt": 1563825310573,
-      "id": 23
     },
     {
       "quoteId": 26,
@@ -264,6 +119,71 @@
       "quoteId": 25,
       "createdAt": 1563827584123,
       "id": 28
+    },
+    {
+      "quoteId": null,
+      "createdAt": 1563832456292,
+      "id": 29
+    },
+    {
+      "quoteId": null,
+      "createdAt": 1563832456468,
+      "id": 30
+    },
+    {
+      "quoteId": null,
+      "createdAt": 1563832456629,
+      "id": 31
+    },
+    {
+      "quoteId": null,
+      "createdAt": 1563832456773,
+      "id": 32
+    },
+    {
+      "quoteId": null,
+      "createdAt": 1563832456934,
+      "id": 33
+    },
+    {
+      "quoteId": null,
+      "createdAt": 1563832457086,
+      "id": 34
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1563832458400,
+      "id": 35
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1563832458567,
+      "id": 36
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1563832459605,
+      "id": 37
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1563832459783,
+      "id": 38
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1563832459926,
+      "id": 39
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1563832460110,
+      "id": 40
+    },
+    {
+      "quoteId": 11,
+      "createdAt": 1563832460288,
+      "id": 41
     }
   ]
 }

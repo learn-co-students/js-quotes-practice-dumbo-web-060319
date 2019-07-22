@@ -65,7 +65,10 @@ document.addEventListener('DOMContentLoaded', function(){
         buttonDelete.addEventListener("click",function(event){
              const id = event.target.parentElement.parentElement.id
              fetch(`http://localhost:3000/quotes/${id}`, {
-                 //
+                method: "DELETE"
+             }).then(response => response.json())
+             .then(function(nth){
+                document.getElementById(id).remove()
              })
         })
         // -- END DELETE ---//
