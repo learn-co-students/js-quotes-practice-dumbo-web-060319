@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', function(){
              fetch(`http://localhost:3000/quotes/${id}`, {
                 method: "DELETE"
              }).then(response => response.json())
-             .then(function(nth){
+             .then(
                 document.getElementById(id).remove()
-             })
+             )
         })
         // -- END DELETE ---//
 

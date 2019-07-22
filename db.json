@@ -1,11 +1,6 @@
 {
   "quotes": [
     {
-      "id": 8,
-      "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "author": "Winston Churchhill"
-    },
-    {
       "id": 9,
       "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
       "author": "Confucius"
@@ -184,6 +179,21 @@
       "quoteId": 11,
       "createdAt": 1563832460288,
       "id": 41
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1563832530076,
+      "id": 42
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1563832530667,
+      "id": 43
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1563832564788,
+      "id": 44
     }
   ]
 }
