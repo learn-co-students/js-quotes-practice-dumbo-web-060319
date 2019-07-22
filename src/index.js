@@ -60,7 +60,11 @@ function grabForm(form) {
 	});
 }
 
-
+// removes the quote from the DOM
+function removeFromDOM(quoteItem) {
+	console.log(quoteItem);
+	quoteItem.remove();
+}
 
 // sends a delete request to the database 
 function deleteQuote(quoteItem) {
@@ -71,7 +75,7 @@ function deleteQuote(quoteItem) {
 			"Accept": "application/json"
 		}
 	})
-	.then()
+	.then(removeFromDOM(quoteItem));
 }
 
 document.addEventListener("DOMContentLoaded", event => {
