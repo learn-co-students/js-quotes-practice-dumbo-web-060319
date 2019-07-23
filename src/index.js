@@ -1,8 +1,31 @@
 // It might be a good idea to add event listener to make sure this file 
 // only runs after the DOM has finshed loading. 
 const QUOTES_URL = "http://localhost:3000/quotes";
+const LIKES_URL = "http://localhost:3000/likes";
 const QUOTE_LIST = document.querySelector('#quote-list');
 const FORM = document.querySelector('#new-quote-form');
+
+function updateLikes(quoteItem, likesArr) {
+	let likes = quoteItem.querySelector('span');
+	likes.innerText = likesArr.length;
+}
+
+function getLikes(quoteItem) {
+	fetch(LIKES_URL)
+	.then(resp => resp.json())
+	.then( allLikes => {let likesArr = allLikes.filter(like => 
+		like.quoteId === parseInt(quoteItem.dataset.id));
+	updateLikes(quoteItem, likesArr);
+	});
+}
+
+function currentLikes(quoteItem) {
+	fetch(LIKES_URL)
+	.then(resp => resp.json())
+	.then(quoteLikes => {let likesArr = quoteLikes.filter(quoteInfo => {
+		quoteInfo.quoteId === parseInt(quoteItem.dataset.id)
+	})})
+}
 
 // creates the quote and appends it to the DOM
 function slapQuoteOnTheDOM(quoteInfo) {
@@ -16,9 +39,10 @@ function slapQuoteOnTheDOM(quoteInfo) {
       <p class="mb-0">${quoteInfo.quote}</p>
       <footer class="blockquote-footer">${quoteInfo.author}</footer>
       <br>
-      <button class='btn-success'>Likes: <span>0</span></button>
+      <button class='btn-success'>Likes: <span></span></button>
       <button class='btn-danger'>Delete</button>
     </blockquote>`;
+  getLikes(quoteItem);
 }
 // iterates through the quotes and shows them on the DOM
 function renderQuotes(quotesData) {
@@ -83,12 +107,36 @@ document.addEventListener("DOMContentLoaded", event => {
 	grabForm(FORM);
 });
 
+// slap Like on the DOM
+function incrementLike(quoteItem) {
+	let likes = quoteItem.querySelector('span');
+	likes.innerText = parseInt(likes.innerText) + 1;
+}
+//creates the like in the database
+function addLike(quoteItem) {
+	fetch(LIKES_URL, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+			"Accept": "application/json"
+		},
+		body: JSON.stringify({
+			"quoteId": parseInt(quoteItem.dataset.id)
+		})
+	})
+	.then(incrementLike(quoteItem));
+}
+
 document.addEventListener("click", event => {
+	// the functionality for the delete button
 	if (event.target.className === 'btn-danger') {
-		deleteQuote(event.target.parentElement.parentElement)
+		deleteQuote(event.target.parentElement.parentElement);
 	}
+	// the functionality for the like button
 	else if (event.target.className === 'btn-success') {
-		console.log(event.target);
+		addLike(event.target.parentElement.parentElement);
 	}
 });
+
+
 
